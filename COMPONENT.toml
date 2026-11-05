@@ -1,0 +1,6 @@
+[component]
+name = "SigmaOS-theme-sync"
+tier = 3
+description = "Cross-application GTK, Qt, terminal, and browser theme synchronizer daemon"
+contracts = ['theme-sync-daemon', 'cross-toolkit-sync', 'color-palette-broadcaster']
+upstream_inspirations = ['https://github.com/omacom/omarchy-theme-sync']
