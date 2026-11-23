@@ -1,4 +1,6 @@
-# Omarchy Theme Sync
+# fk-omarchy-theme-sync
+
+> Forked from omacom/omarchy-theme-sync (MIT). See `SIGMAOS_FORK.md`.
 
 Use your Omarchy desktop colors on the web.
 
