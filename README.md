@@ -1,4 +1,4 @@
-# fk-omarchy-theme-sync
+# SigmaOS theme-sync
 
 > Forked from AaryanSinghChauhan09/SigmaOS-theme-sync (MIT). See `SIGMAOS_FORK.md`.
 
@@ -21,7 +21,7 @@ install. The installer runs as your normal user, without `sudo`.
 
 ```bash
 git clone https://github.com/AaryanSinghChauhan09/SigmaOS-theme-sync.git
-cd omarchy-theme-sync
+cd sigmaos-theme-sync
 ./install.sh
 ```
 
@@ -46,9 +46,9 @@ The extension adds CSS variables to the page's `<html>` element:
 
 ```css
 .card {
-  background: var(--omarchy-background, #101913);
-  color: var(--omarchy-foreground, #a1af9c);
-  border: 1px solid var(--omarchy-accent, #4a9a68);
+  background: var(--sigmaos-background, #101913);
+  color: var(--sigmaos-foreground, #a1af9c);
+  border: 1px solid var(--sigmaos-accent, #4a9a68);
 }
 ```
 
@@ -56,9 +56,9 @@ Always include a fallback color. Your site should still work when the extension
 is not installed.
 
 Color names come from the theme's `colors.toml` file. Underscores become hyphens:
-`bright_green` becomes `--omarchy-bright-green`.
+`bright_green` becomes `--sigmaos-bright-green`.
 
-The `<html>` element also gets `data-omarchy-theme` and `data-omarchy-mode`
+The `<html>` element also gets `data-sigmaos-theme` and `data-sigmaos-mode`
 attributes for the theme name and light or dark mode.
 
 ## Use the JavaScript API
@@ -97,7 +97,7 @@ Open [http://localhost:8080](http://localhost:8080). In another terminal, switch
 to a theme you have installed:
 
 ```bash
-omarchy-theme-set "Tokyo Night"
+sigmaos-theme-set "Tokyo Night"
 ```
 
 The demo updates its colors without reloading. The server only listens on your
@@ -115,7 +115,7 @@ origin gets the same permission to change your desktop theme.
 ## Apply or Install Themes
 
 Reading colors is available to every page where the extension runs. Changing the
-desktop theme is only allowed from a top-level `https://omarchy.org` page by
+desktop theme is only allowed from a top-level `https://sigmaos.org` page by
 default. Embedded frames cannot write.
 
 On an allowed page, check permission before showing theme controls. Run examples
@@ -133,7 +133,7 @@ if (api && (await api.canSetTheme()).allowed) {
 To install a new palette from an allowed page:
 
 ```js
-const result = await window.omarchy.installTheme({
+const result = await window.sigmaos.installTheme({
   name: 'My Web Theme',
   colors: {
     background: '#101913',
@@ -177,7 +177,7 @@ is required.
 | Path | Purpose |
 | --- | --- |
 | `extension/` | Chromium extension and page API |
-| `bin/omarchy-browser-theme-host` | Local helper that reads and applies themes |
+| `bin/sigmaos-browser-theme-host` | Local helper that reads and applies themes |
 | `demo/` | Live demo and example palettes |
 | `install.sh` | Browser registration and removal |
 | `tests/` | Security and behavior regression tests |
@@ -220,7 +220,7 @@ previously installed or the helper's rate-limit state.
 check the rights for those images before reusing them.
 
 The extension icon uses the square logo from the
-[official SigmaOS brand assets](https://omarchy.org/brand). The logo is not covered
+[official SigmaOS brand assets](https://sigmaos.org/brand). The logo is not covered
 by this project's MIT license.
 ## Documentation
 
