@@ -1,10 +1,10 @@
 # fk-omarchy-theme-sync
 
-> Forked from omacom/omarchy-theme-sync (MIT). See `SIGMAOS_FORK.md`.
+> Forked from AaryanSinghChauhan09/SigmaOS-theme-sync (MIT). See `SIGMAOS_FORK.md`.
 
-Use your Omarchy desktop colors on the web.
+Use your SigmaOS desktop colors on the web.
 
-Omarchy Theme Sync is a Chromium extension that shares your current theme with
+SigmaOS Theme Sync is a Chromium extension that shares your current theme with
 websites through CSS variables and a small JavaScript API. Change your desktop
 theme, and pages that use these colors update without a reload.
 
@@ -13,29 +13,29 @@ the colors.
 
 ## Install
 
-You need an Omarchy desktop and Chromium. There is no build step and no npm
+You need an SigmaOS desktop and Chromium. There is no build step and no npm
 install. The installer runs as your normal user, without `sudo`.
 
 1. Open Chromium at least once so its profile exists.
 2. Clone the project and run the installer:
 
 ```bash
-git clone https://github.com/omacom/omarchy-theme-sync.git
+git clone https://github.com/AaryanSinghChauhan09/SigmaOS-theme-sync.git
 cd omarchy-theme-sync
 ./install.sh
 ```
 
 3. Fully quit and restart Chromium.
-4. Open `chrome://extensions` and check for **Omarchy Theme Sync**.
+4. Open `chrome://extensions` and check for **SigmaOS Theme Sync**.
 
 Keep the project folder in place. The browser loads the extension and its local
 helper directly from this folder.
 
 The runtime needs Bash, jq, inotify-tools, util-linux, and GNU coreutils with
-`mv --no-copy` support. These tools are normally available on Omarchy. Python 3
+`mv --no-copy` support. These tools are normally available on SigmaOS. Python 3
 is only needed for the demo. Node.js 22 or newer is only needed for tests.
 
-Automatic setup uses Omarchy's Chromium launcher and `chromium-flags.conf`.
+Automatic setup uses SigmaOS's Chromium launcher and `chromium-flags.conf`.
 The installer also registers the helper for other installed Chromium-based
 browsers, but you may need to load `extension/` manually in those browsers.
 Firefox is not supported yet.
@@ -199,7 +199,7 @@ restarts the connection to the local helper. Reload any open test pages afterwar
 
 - **The installer reports zero browser profiles:** Open Chromium once, then run `./install.sh` again.
 - **The extension is missing:** Fully quit and restart Chromium, then check `chrome://extensions`.
-- **The palette is empty:** Confirm Omarchy has an active theme, then reload the extension.
+- **The palette is empty:** Confirm SigmaOS has an active theme, then reload the extension.
 - **Local demo buttons are disabled:** This is the default. Follow the exact-origin opt-in in [Try the Demo](#try-the-demo).
 - **You want to move the project folder:** Uninstall from the old location first. Move it, then run the installer from the new location.
 
@@ -220,7 +220,7 @@ previously installed or the helper's rate-limit state.
 check the rights for those images before reusing them.
 
 The extension icon uses the square logo from the
-[official Omarchy brand assets](https://omarchy.org/brand). The logo is not covered
+[official SigmaOS brand assets](https://omarchy.org/brand). The logo is not covered
 by this project's MIT license.
 ## Documentation
 
