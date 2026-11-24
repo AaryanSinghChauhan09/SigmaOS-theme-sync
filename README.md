@@ -151,7 +151,7 @@ if (!result.ok) console.error(result.error);
 - An optional `backgroundUrl` must be a direct HTTPS image on an allowed wallpaper host. The bundled gallery has working examples.
 - `{ ok: true }` means the request was accepted, not that the desktop has finished updating. Listen for `onChange` to see the result.
 
-New themes are stored in `~/.config/omarchy/themes/<slug>/`. Gallery cards switch
+New themes are stored in `~/.config/sigmaos/themes/<slug>/`. Gallery cards switch
 to **Apply existing** after installation or an existing-name error.
 
 ## Security and Privacy
