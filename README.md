@@ -222,3 +222,11 @@ check the rights for those images before reusing them.
 The extension icon uses the square logo from the
 [official Omarchy brand assets](https://omarchy.org/brand). The logo is not covered
 by this project's MIT license.
+## Documentation
+
+Detailed Wiki documentation is available in the standalone Wiki repository:
+
+- [SigmaOS-theme-sync-Wiki](https://github.com/AaryanSinghChauhan09/SigmaOS-theme-sync-Wiki) - Full Wiki documentation
+
+For the complete SigmaOS Wiki catalog, see:
+- [SigmaOS Wiki Staging](https://github.com/AaryanSinghChauhan09/sigmaos-wiki-staging)
