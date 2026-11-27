@@ -63,10 +63,10 @@ attributes for the theme name and light or dark mode.
 
 ## Use the JavaScript API
 
-Check for `window.omarchy` before using it:
+Check for `window.sigmaos` before using it:
 
 ```js
-const api = window.omarchy;
+const api = window.sigmaos;
 
 if (api) {
   console.log(api.theme);           // Theme name
@@ -122,7 +122,7 @@ On an allowed page, check permission before showing theme controls. Run examples
 with `await` in the browser console or a JavaScript module:
 
 ```js
-const api = window.omarchy;
+const api = window.sigmaos;
 
 if (api && (await api.canSetTheme()).allowed) {
   const result = await api.setTheme('Tokyo Night');
